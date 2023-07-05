@@ -1,11 +1,11 @@
 import sys
-sys.path.append('/')
+sys.path.append('F:\dev\Chatbot4Univ3')
 
 import pickle
 from chatbot.utils.Preprocess import Preprocess
 
 # 단어 사전 불러오기
-f = open("../../train_tools/dict/chatbot_dict.bin", "rb")
+f = open("../train_tools/dict/chatbot_dict.bin", "rb")
 word_index = pickle.load(f)
 f.close()
 
