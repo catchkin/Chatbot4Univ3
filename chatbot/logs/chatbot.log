@@ -1,0 +1,838 @@
+2023-07-03 12:01:17,695,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 12:01:17,695,[33mPress CTRL+C to quit[0m
+2023-07-03 12:01:32,134,Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 74, in index
+    return render_template("index.html")
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2023-07-03 12:01:32,139,127.0.0.1 - - [03/Jul/2023 12:01:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-07-03 12:01:32,651,Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 74, in index
+    return render_template("index.html")
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2023-07-03 12:01:32,652,127.0.0.1 - - [03/Jul/2023 12:01:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-07-03 12:01:32,883,Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 74, in index
+    return render_template("index.html")
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2023-07-03 12:01:32,884,127.0.0.1 - - [03/Jul/2023 12:01:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-07-03 12:01:33,051,Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 74, in index
+    return render_template("index.html")
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2023-07-03 12:01:33,052,127.0.0.1 - - [03/Jul/2023 12:01:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-07-03 12:01:34,132,127.0.0.1 - - [03/Jul/2023 12:01:34] "[33mGET /request_chat/kang/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:01:34,780,127.0.0.1 - - [03/Jul/2023 12:01:34] "[33mGET /request_chat/kang/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:01:34,995,127.0.0.1 - - [03/Jul/2023 12:01:34] "[33mGET /request_chat/kang/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:01:35,188,127.0.0.1 - - [03/Jul/2023 12:01:35] "[33mGET /request_chat/kang/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:01:35,347,127.0.0.1 - - [03/Jul/2023 12:01:35] "[33mGET /request_chat/kang/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:10:26,493,127.0.0.1 - - [03/Jul/2023 12:10:26] "[33mGET /request_chat/kochat/kochat2 HTTP/1.1[0m" 404 -
+2023-07-03 12:10:41,442,127.0.0.1 - - [03/Jul/2023 12:10:41] "[33mGET /request_chat/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:12:22,754,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 12:12:22,754,[33mPress CTRL+C to quit[0m
+2023-07-03 12:12:29,137,127.0.0.1 - - [03/Jul/2023 12:12:29] "[33mGET /request_chat/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:12:29,834,127.0.0.1 - - [03/Jul/2023 12:12:29] "[33mGET /request_chat/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:12:30,084,127.0.0.1 - - [03/Jul/2023 12:12:30] "[33mGET /request_chat/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:12:30,274,127.0.0.1 - - [03/Jul/2023 12:12:30] "[33mGET /request_chat/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:12:30,434,127.0.0.1 - - [03/Jul/2023 12:12:30] "[33mGET /request_chat/abcdefghi HTTP/1.1[0m" 404 -
+2023-07-03 12:12:39,682,127.0.0.1 - - [03/Jul/2023 12:12:39] "[33mGET /request_chat/dsfd/jkdjkjdsksdjdks HTTP/1.1[0m" 404 -
+2023-07-03 12:13:35,443,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 12:13:35,444,[33mPress CTRL+C to quit[0m
+2023-07-03 12:16:29,629,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 12:16:29,629,[33mPress CTRL+C to quit[0m
+2023-07-03 12:16:42,562,127.0.0.1 - - [03/Jul/2023 12:16:42] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:16:52,833,127.0.0.1 - - [03/Jul/2023 12:16:52] "GET /request_chat/kkjakjfa;dkd HTTP/1.1" 200 -
+2023-07-03 12:18:15,960,127.0.0.1 - - [03/Jul/2023 12:18:15] "GET /request_chat/asd;asddfs HTTP/1.1" 200 -
+2023-07-03 12:18:17,863,127.0.0.1 - - [03/Jul/2023 12:18:17] "GET /request_chat/ksdjkd;s HTTP/1.1" 200 -
+2023-07-03 12:18:33,480,127.0.0.1 - - [03/Jul/2023 12:18:33] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:18:33,968,127.0.0.1 - - [03/Jul/2023 12:18:33] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:18:34,160,127.0.0.1 - - [03/Jul/2023 12:18:34] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:18:34,336,127.0.0.1 - - [03/Jul/2023 12:18:34] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:18:34,498,127.0.0.1 - - [03/Jul/2023 12:18:34] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:18:34,665,127.0.0.1 - - [03/Jul/2023 12:18:34] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:18:34,817,127.0.0.1 - - [03/Jul/2023 12:18:34] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:19:30,361,127.0.0.1 - - [03/Jul/2023 12:19:30] "GET /request_chat/42454543 HTTP/1.1" 200 -
+2023-07-03 12:19:49,895,127.0.0.1 - - [03/Jul/2023 12:19:49] "GET /request_chat/a HTTP/1.1" 200 -
+2023-07-03 12:20:56,730,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 12:20:56,730,[33mPress CTRL+C to quit[0m
+2023-07-03 12:20:57,816,127.0.0.1 - - [03/Jul/2023 12:20:57] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:20:58,785,127.0.0.1 - - [03/Jul/2023 12:20:58] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:20:59,049,127.0.0.1 - - [03/Jul/2023 12:20:59] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:20:59,208,127.0.0.1 - - [03/Jul/2023 12:20:59] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:20:59,376,127.0.0.1 - - [03/Jul/2023 12:20:59] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:20:59,528,127.0.0.1 - - [03/Jul/2023 12:20:59] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:20:59,695,127.0.0.1 - - [03/Jul/2023 12:20:59] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 12:21:08,856,127.0.0.1 - - [03/Jul/2023 12:21:08] "GET /request_chat/123 HTTP/1.1" 200 -
+2023-07-03 13:20:38,660,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 13:20:38,660,[33mPress CTRL+C to quit[0m
+2023-07-03 13:20:45,684,Exception on /request_chat/dkskldslj [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:20:45,697,127.0.0.1 - - [03/Jul/2023 13:20:45] "[35m[1mGET /request_chat/dkskldslj HTTP/1.1[0m" 500 -
+2023-07-03 13:20:50,149,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:20:50,150,127.0.0.1 - - [03/Jul/2023 13:20:50] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:22:07,179,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 13:22:07,179,[33mPress CTRL+C to quit[0m
+2023-07-03 13:22:07,342,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:22:07,345,127.0.0.1 - - [03/Jul/2023 13:22:07] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:22:08,896,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:22:08,897,127.0.0.1 - - [03/Jul/2023 13:22:08] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:22:09,424,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:22:09,425,127.0.0.1 - - [03/Jul/2023 13:22:09] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:22:09,663,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:22:09,664,127.0.0.1 - - [03/Jul/2023 13:22:09] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:22:09,848,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:22:09,849,127.0.0.1 - - [03/Jul/2023 13:22:09] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:22:10,016,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:22:10,017,127.0.0.1 - - [03/Jul/2023 13:22:10] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:22:10,175,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:22:10,176,127.0.0.1 - - [03/Jul/2023 13:22:10] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:22:10,337,Exception on /request_chat/abcdefghidslkdl [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 13:22:10,337,127.0.0.1 - - [03/Jul/2023 13:22:10] "[35m[1mGET /request_chat/abcdefghidslkdl HTTP/1.1[0m" 500 -
+2023-07-03 13:23:00,655,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 13:23:00,655,[33mPress CTRL+C to quit[0m
+2023-07-03 13:23:04,167,127.0.0.1 - - [03/Jul/2023 13:23:04] "GET /request_chat/abcdefghidslkdl HTTP/1.1" 200 -
+2023-07-03 13:49:21,554,127.0.0.1 - - [03/Jul/2023 13:49:21] "GET /request_chat/djnsdjhjsdds] HTTP/1.1" 200 -
+2023-07-03 13:49:26,865,127.0.0.1 - - [03/Jul/2023 13:49:26] "GET /request_chat/djskdjdsk HTTP/1.1" 200 -
+2023-07-03 16:40:08,103,127.0.0.1 - - [03/Jul/2023 16:40:08] "GET /request_chat/학사%20일정이%20궁금합니다 HTTP/1.1" 200 -
+2023-07-03 16:41:42,540,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:41:42,540,[33mPress CTRL+C to quit[0m
+2023-07-03 16:42:59,496,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:42:59,497,[33mPress CTRL+C to quit[0m
+2023-07-03 16:43:30,939,127.0.0.1 - - [03/Jul/2023 16:43:30] "GET /request_chat/학사일정%20안내%20부탁%20드려요 HTTP/1.1" 200 -
+2023-07-03 16:44:41,637,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:44:41,637,[33mPress CTRL+C to quit[0m
+2023-07-03 16:44:55,156,Exception on /request_chat/학사일정 안내해 주세요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 82, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 16:44:55,158,127.0.0.1 - - [03/Jul/2023 16:44:55] "[35m[1mGET /request_chat/학사일정%20안내해%20주세요 HTTP/1.1[0m" 500 -
+2023-07-03 16:45:54,576,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:45:54,576,[33mPress CTRL+C to quit[0m
+2023-07-03 16:46:04,034,Exception on /request_chat/학사 안내 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    predict = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 16:46:04,037,127.0.0.1 - - [03/Jul/2023 16:46:04] "[35m[1mGET /request_chat/학사%20안내 HTTP/1.1[0m" 500 -
+2023-07-03 16:46:07,049,Exception on /request_chat/학사 안내 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 83, in request_chat
+    predict = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 16:46:07,050,127.0.0.1 - - [03/Jul/2023 16:46:07] "[35m[1mGET /request_chat/학사%20안내 HTTP/1.1[0m" 500 -
+2023-07-03 16:48:13,407,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:48:13,408,[33mPress CTRL+C to quit[0m
+2023-07-03 16:48:41,784,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:48:41,785,[33mPress CTRL+C to quit[0m
+2023-07-03 16:48:53,631,Exception on /request_chat/학사일정 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 85, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 16:48:53,634,127.0.0.1 - - [03/Jul/2023 16:48:53] "[35m[1mGET /request_chat/학사일정 HTTP/1.1[0m" 500 -
+2023-07-03 16:52:38,809,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:52:38,810,[33mPress CTRL+C to quit[0m
+2023-07-03 16:52:57,644,Exception on /request_chat/학사일정 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 86, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 16:52:57,646,127.0.0.1 - - [03/Jul/2023 16:52:57] "[35m[1mGET /request_chat/학사일정 HTTP/1.1[0m" 500 -
+2023-07-03 16:53:05,592,Exception on /request_chat/학사일정정 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 86, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 16:53:05,593,127.0.0.1 - - [03/Jul/2023 16:53:05] "[35m[1mGET /request_chat/학사일정정 HTTP/1.1[0m" 500 -
+2023-07-03 16:54:11,366,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:54:11,366,[33mPress CTRL+C to quit[0m
+2023-07-03 16:54:25,102,Exception on /request_chat/학사일정이요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 84, in request_chat
+    intent = IntentModel()
+TypeError: __init__() missing 2 required positional arguments: 'model_name' and 'preprocess'
+2023-07-03 16:54:25,105,127.0.0.1 - - [03/Jul/2023 16:54:25] "[35m[1mGET /request_chat/학사일정이요 HTTP/1.1[0m" 500 -
+2023-07-03 16:54:36,252,Exception on /request_chat/학사일정이요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 84, in request_chat
+    intent = IntentModel()
+TypeError: __init__() missing 2 required positional arguments: 'model_name' and 'preprocess'
+2023-07-03 16:54:36,253,127.0.0.1 - - [03/Jul/2023 16:54:36] "[35m[1mGET /request_chat/학사일정이요 HTTP/1.1[0m" 500 -
+2023-07-03 16:54:39,946,Exception on /request_chat/학사일정이요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 84, in request_chat
+    intent = IntentModel()
+TypeError: __init__() missing 2 required positional arguments: 'model_name' and 'preprocess'
+2023-07-03 16:54:39,947,127.0.0.1 - - [03/Jul/2023 16:54:39] "[35m[1mGET /request_chat/학사일정이요 HTTP/1.1[0m" 500 -
+2023-07-03 16:55:12,709,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:55:12,709,[33mPress CTRL+C to quit[0m
+2023-07-03 16:55:12,742,127.0.0.1 - - [03/Jul/2023 16:55:12] "GET /request_chat/학사일정이요 HTTP/1.1" 200 -
+2023-07-03 16:55:23,117,127.0.0.1 - - [03/Jul/2023 16:55:23] "GET /request_chat/요 HTTP/1.1" 200 -
+2023-07-03 16:55:25,543,127.0.0.1 - - [03/Jul/2023 16:55:25] "GET /request_chat/ㅇ;ㅣㅛ HTTP/1.1" 200 -
+2023-07-03 16:55:28,342,127.0.0.1 - - [03/Jul/2023 16:55:28] "GET /request_chat/학사일정이요 HTTP/1.1" 200 -
+2023-07-03 16:55:38,560,127.0.0.1 - - [03/Jul/2023 16:55:38] "GET /request_chat/이요 HTTP/1.1" 200 -
+2023-07-03 16:55:40,714,127.0.0.1 - - [03/Jul/2023 16:55:40] "GET /request_chat/아리 HTTP/1.1" 200 -
+2023-07-03 16:57:46,335,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:57:46,335,[33mPress CTRL+C to quit[0m
+2023-07-03 16:57:47,839,127.0.0.1 - - [03/Jul/2023 16:57:47] "GET /request_chat/학사일정이요아ㅓㄴ앙 HTTP/1.1" 200 -
+2023-07-03 16:58:03,414,127.0.0.1 - - [03/Jul/2023 16:58:03] "GET /request_chat/이이요 HTTP/1.1" 200 -
+2023-07-03 16:58:06,629,127.0.0.1 - - [03/Jul/2023 16:58:06] "GET /request_chat/학사일정이요 HTTP/1.1" 200 -
+2023-07-03 16:59:04,749,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:59:04,749,[33mPress CTRL+C to quit[0m
+2023-07-03 16:59:12,142,127.0.0.1 - - [03/Jul/2023 16:59:12] "GET /request_chat/일달ㅇ HTTP/1.1" 200 -
+2023-07-03 16:59:46,360,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 16:59:46,360,[33mPress CTRL+C to quit[0m
+2023-07-03 16:59:55,146,Exception on /request_chat/학사일정이요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "chatbot.py", line 85, in request_chat
+    intent_pred = intent.predict_class(query)
+  File "F:\dev\Chatbot4Univ2\chatbot\models\intent\intentModel.py", line 30, in predict_class
+    from app.config import MAX_SEQ_LEN
+ModuleNotFoundError: No module named 'app'
+2023-07-03 16:59:55,148,127.0.0.1 - - [03/Jul/2023 16:59:55] "[35m[1mGET /request_chat/학사일정이요 HTTP/1.1[0m" 500 -
+2023-07-03 17:04:44,755,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:04:44,755,[33mPress CTRL+C to quit[0m
+2023-07-03 17:04:56,701,127.0.0.1 - - [03/Jul/2023 17:04:56] "GET /request_chat/학사잉렂ㅇ HTTP/1.1" 200 -
+2023-07-03 17:06:23,824,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:06:23,824,[33mPress CTRL+C to quit[0m
+2023-07-03 17:06:38,080,127.0.0.1 - - [03/Jul/2023 17:06:38] "GET /request_chat/학사일정이요 HTTP/1.1" 200 -
+2023-07-03 17:06:56,642,Exception on /request_chat/대학원번호알려주세요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2153, in make_response
+    rv = self.json.response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type float32 is not JSON serializable
+2023-07-03 17:06:56,645,127.0.0.1 - - [03/Jul/2023 17:06:56] "[35m[1mGET /request_chat/대학원번호알려주세요 HTTP/1.1[0m" 500 -
+2023-07-03 17:08:15,549,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:08:15,549,[33mPress CTRL+C to quit[0m
+2023-07-03 17:08:34,649,127.0.0.1 - - [03/Jul/2023 17:08:34] "GET /request_chat/대학원%20번호 HTTP/1.1" 200 -
+2023-07-03 17:12:55,161,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:12:55,161,[33mPress CTRL+C to quit[0m
+2023-07-03 17:13:13,534,Exception on /request_chat/대학원 번호요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2153, in make_response
+    rv = self.json.response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type float32 is not JSON serializable
+2023-07-03 17:13:13,537,127.0.0.1 - - [03/Jul/2023 17:13:13] "[35m[1mGET /request_chat/대학원%20번호요 HTTP/1.1[0m" 500 -
+2023-07-03 17:13:50,289,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:13:50,290,[33mPress CTRL+C to quit[0m
+2023-07-03 17:14:09,144,Exception on /request_chat/대학원 번호알려주세요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2153, in make_response
+    rv = self.json.response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type float32 is not JSON serializable
+2023-07-03 17:14:09,147,127.0.0.1 - - [03/Jul/2023 17:14:09] "[35m[1mGET /request_chat/대학원%20번호알려주세요 HTTP/1.1[0m" 500 -
+2023-07-03 17:15:14,735,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:15:14,735,[33mPress CTRL+C to quit[0m
+2023-07-03 17:15:30,260,Exception on /request_chat/대학원 번호알려주세요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2153, in make_response
+    rv = self.json.response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type float32 is not JSON serializable
+2023-07-03 17:15:30,263,127.0.0.1 - - [03/Jul/2023 17:15:30] "[35m[1mGET /request_chat/대학원%20번호알려주세요 HTTP/1.1[0m" 500 -
+2023-07-03 17:16:15,681,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:16:15,682,[33mPress CTRL+C to quit[0m
+2023-07-03 17:16:56,039,127.0.0.1 - - [03/Jul/2023 17:16:56] "GET /request_chat/대학원%20번호알려주세요 HTTP/1.1" 200 -
+2023-07-03 17:17:38,871,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:17:38,871,[33mPress CTRL+C to quit[0m
+2023-07-03 17:17:52,492,127.0.0.1 - - [03/Jul/2023 17:17:52] "GET /request_chat/홍보팀%20번호%20이요 HTTP/1.1" 200 -
+2023-07-03 17:18:24,243,127.0.0.1 - - [03/Jul/2023 17:18:24] "GET /request_chat/대학원%20번호이요 HTTP/1.1" 200 -
+2023-07-03 17:18:53,189,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:18:53,189,[33mPress CTRL+C to quit[0m
+2023-07-03 17:19:08,167,127.0.0.1 - - [03/Jul/2023 17:19:08] "GET /request_chat/도서관%20번호%20알려ㅑ주세요 HTTP/1.1" 200 -
+2023-07-03 17:19:46,515,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:19:46,515,[33mPress CTRL+C to quit[0m
+2023-07-03 17:19:49,795,Exception on /request_chat/알려주세요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2153, in make_response
+    rv = self.json.response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type float32 is not JSON serializable
+2023-07-03 17:19:49,797,127.0.0.1 - - [03/Jul/2023 17:19:49] "[35m[1mGET /request_chat/알려주세요 HTTP/1.1[0m" 500 -
+2023-07-03 17:20:09,479,Exception on /request_chat/도서관 번호 이요 [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2153, in make_response
+    rv = self.json.response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type float32 is not JSON serializable
+2023-07-03 17:20:09,480,127.0.0.1 - - [03/Jul/2023 17:20:09] "[35m[1mGET /request_chat/도서관%20번호%20이요 HTTP/1.1[0m" 500 -
+2023-07-03 17:21:00,832,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:21:00,832,[33mPress CTRL+C to quit[0m
+2023-07-03 17:21:15,800,127.0.0.1 - - [03/Jul/2023 17:21:15] "GET /request_chat/대학원%20번호이요 HTTP/1.1" 200 -
+2023-07-03 17:21:24,408,127.0.0.1 - - [03/Jul/2023 17:21:24] "GET /request_chat/홍보팀%20번호이요 HTTP/1.1" 200 -
+2023-07-03 17:21:59,208,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:21:59,208,[33mPress CTRL+C to quit[0m
+2023-07-03 17:22:21,644,127.0.0.1 - - [03/Jul/2023 17:22:21] "GET /request_chat/홍토팀%20알려주세요 HTTP/1.1" 200 -
+2023-07-03 17:23:39,017,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:23:39,017,[33mPress CTRL+C to quit[0m
+2023-07-03 17:23:42,984,127.0.0.1 - - [03/Jul/2023 17:23:42] "GET /request_chat/대학원%20번호 HTTP/1.1" 200 -
+2023-07-03 17:23:53,020,127.0.0.1 - - [03/Jul/2023 17:23:53] "GET /request_chat/홍보팀%20번호 HTTP/1.1" 200 -
+2023-07-03 17:25:52,182,127.0.0.1 - - [03/Jul/2023 17:25:52] "GET /request_chat/대학원%20번호입니다 HTTP/1.1" 200 -
+2023-07-03 17:26:01,072,127.0.0.1 - - [03/Jul/2023 17:26:01] "GET /request_chat/대학원 HTTP/1.1" 200 -
+2023-07-03 17:26:17,742,127.0.0.1 - - [03/Jul/2023 17:26:17] "GET /request_chat/도서관 HTTP/1.1" 200 -
+2023-07-03 17:28:02,271,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:28:02,271,[33mPress CTRL+C to quit[0m
+2023-07-03 17:28:19,334,Exception on /request_chat/대학원 번이이ㅛ [GET]
+Traceback (most recent call last):
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\app.py", line 2153, in make_response
+    rv = self.json.response(rv)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bctone\anaconda3\envs\chatbot4univ\lib\site-packages\flask\json\provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type set is not JSON serializable
+2023-07-03 17:28:19,337,127.0.0.1 - - [03/Jul/2023 17:28:19] "[35m[1mGET /request_chat/대학원%20번이이ㅛ HTTP/1.1[0m" 500 -
+2023-07-03 17:28:52,967,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:28:52,967,[33mPress CTRL+C to quit[0m
+2023-07-03 17:29:00,955,127.0.0.1 - - [03/Jul/2023 17:29:00] "GET /request_chat/대학원%20번호%20입니다 HTTP/1.1" 200 -
+2023-07-03 17:29:15,541,127.0.0.1 - - [03/Jul/2023 17:29:15] "GET /request_chat/대%20학원%20번%20호%20입니다 HTTP/1.1" 200 -
+2023-07-03 17:29:25,174,127.0.0.1 - - [03/Jul/2023 17:29:25] "GET /request_chat/대원%20번입니다 HTTP/1.1" 200 -
+2023-07-03 17:29:42,584,127.0.0.1 - - [03/Jul/2023 17:29:42] "GET /request_chat/호옵%20팀입니다 HTTP/1.1" 200 -
+2023-07-03 17:29:53,471,127.0.0.1 - - [03/Jul/2023 17:29:53] "GET /request_chat/홍보팅입니다 HTTP/1.1" 200 -
+2023-07-03 17:30:00,119,127.0.0.1 - - [03/Jul/2023 17:30:00] "GET /request_chat/홍보팀입니다 HTTP/1.1" 200 -
+2023-07-03 17:30:06,362,127.0.0.1 - - [03/Jul/2023 17:30:06] "GET /request_chat/홍보팀%20번호 HTTP/1.1" 200 -
+2023-07-03 17:33:54,254,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:33:54,254,[33mPress CTRL+C to quit[0m
+2023-07-03 17:34:05,962,127.0.0.1 - - [03/Jul/2023 17:34:05] "GET /request_chat/홍보팀%20번호 HTTP/1.1" 200 -
+2023-07-03 17:35:06,602,평가전략팀,장소,홍보팀번호알려줘,번호,0
+2023-07-03 17:35:06,606,127.0.0.1 - - [03/Jul/2023 17:35:06] "GET /request_chat/평가전략팀 HTTP/1.1" 200 -
+2023-07-03 17:35:17,073,평가전략팀 빠른 시간,장소,홍보팀번호알려줘,번호,0
+2023-07-03 17:35:17,077,127.0.0.1 - - [03/Jul/2023 17:35:17] "GET /request_chat/평가전략팀%20빠른%20시간 HTTP/1.1" 200 -
+2023-07-03 17:36:08,299,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:36:08,299,[33mPress CTRL+C to quit[0m
+2023-07-03 17:36:22,434,127.0.0.1 - - [03/Jul/2023 17:36:22] "GET /request_chat/대학원%20번호 HTTP/1.1" 200 -
+2023-07-03 17:37:32,776,호서대학교,장소,대학원번호알려줘,번호,0
+2023-07-03 17:37:32,780,127.0.0.1 - - [03/Jul/2023 17:37:32] "GET /request_chat/호서대학교 HTTP/1.1" 200 -
+2023-07-03 17:40:44,268,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-03 17:40:44,268,[33mPress CTRL+C to quit[0m
+2023-07-03 17:40:52,085,비서설 빈호,번호,비서팀위치알려줘,장소,0
+2023-07-03 17:40:52,090,127.0.0.1 - - [03/Jul/2023 17:40:52] "GET /request_chat/비서설%20빈호 HTTP/1.1" 200 -
+2023-07-03 17:41:00,196,127.0.0.1 - - [03/Jul/2023 17:41:00] "GET /request_chat/비서실%20번호%20알려주세요 HTTP/1.1" 200 -
+2023-07-03 17:41:26,695,127.0.0.1 - - [03/Jul/2023 17:41:26] "GET /request_chat/애니과%20위치%20아니 HTTP/1.1" 200 -
+2023-07-03 17:42:09,167,127.0.0.1 - - [03/Jul/2023 17:42:09] "GET /request_chat/LMS%20번호 HTTP/1.1" 200 -
+2023-07-03 17:42:23,648,127.0.0.1 - - [03/Jul/2023 17:42:23] "GET /request_chat/탁구장%20위치 HTTP/1.1" 200 -
+2023-07-03 17:48:39,435,127.0.0.1 - - [03/Jul/2023 17:48:39] "GET /request_chat/대학원%20번호 HTTP/1.1" 200 -
+2023-07-03 17:49:40,536,127.0.0.1 - - [03/Jul/2023 17:49:40] "GET /request_chat/대학원%20위치는 HTTP/1.1" 200 -
+2023-07-03 17:49:48,793,127.0.0.1 - - [03/Jul/2023 17:49:48] "GET /request_chat/대학원%20번호는 HTTP/1.1" 200 -
+2023-07-03 19:24:35,101,127.0.0.1 - - [03/Jul/2023 19:24:35] "GET /request_chat/컴퓨터공학%20번호%20알려줘 HTTP/1.1" 200 -
+2023-07-03 19:24:46,264,127.0.0.1 - - [03/Jul/2023 19:24:46] "GET /request_chat/컴공%20번호%20알려줘 HTTP/1.1" 200 -
