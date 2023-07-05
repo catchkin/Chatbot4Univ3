@@ -1,7 +1,10 @@
 import sys
 sys.path.append('F:\dev\Chatbot4Univ2')
 
+import threading
+import json
 import pandas as pd
+import tensorflow as tf
 import torch
 
 from utils.Preprocess import Preprocess
@@ -18,7 +21,14 @@ CORS(app)
 
 # tensorflow gpu 메모리 할당
 # tf는 시작시 메모리를 최대로 할당하기 때문에, 0번 GPU를 2GB 메모리만 사용하도록 설정함
-
+gpus = tf.config.experimental.list_physical_devices('GPU')
+if gpus:
+    try:
+        tf.config.experimental.set_visible_devices(gpus[0], 'GPU')
+        tf.config.experimental.set_virtual_device_configuration(gpus[0],
+                        [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=2048)])
+    except RuntimeError as e:
+        print(e)
 
 
 # 로그 기능 구현
