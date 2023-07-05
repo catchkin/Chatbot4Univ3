@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/')
+sys.path.append('F:\dev\Chatbot4Univ3')
 
 from chatbot.utils.Preprocess import Preprocess
 
