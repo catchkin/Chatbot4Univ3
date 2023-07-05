@@ -95,22 +95,25 @@ predictions = Dense(3, activation=tf.nn.softmax)(logits)
 model = Model(inputs=input_layer, outputs=predictions)
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
-              metrics=['accuracy',
-                tensorflow_addons.metrics.F1Score(num_classes=2, average='micro')
-                ])
+              metrics=['accuracy'])
+
+#model.compile(optimizer='adam',
+#              loss='sparse_categorical_crossentropy',
+#              metrics=['accuracy',
+#                tensorflow_addons.metrics.F1Score(num_classes=2, average='micro')
+#                ])
 
 model.summary()
 
 # train model
-#es = EarlyStopping(monitor='val_f1_score', patience=3, mode='max')
-#model.fit(train_ds, validation_data=val_ds, callbacks=[es])
 model.fit(train_ds, validation_data=val_ds, epochs=EPOCH, verbose=1)
 
 # evaluate model
-loss, accuracy, f1_score = model.evaluate(test_ds, verbose=1)
+loss, accuracy = model.evaluate(test_ds, verbose=1)
+#loss, accuracy, f1_score = model.evaluate(test_ds, verbose=1)
 print("Accuracy: %f" % (accuracy * 100))
 print("loss : %f" % (loss))
-print("f1_score : %f" % (f1_score))
+#print("f1_score : %f" % (f1_score))
 
 
 # save model
